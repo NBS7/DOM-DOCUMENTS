@@ -1,0 +1,263 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("theory").className = "active treeview";
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:1em;"><b>Dynamics of Machine Lab</b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Dynamics of Machine Lab</a>
+              </li>
+              <li>
+                <a href="#">Disc type flywheel</a>
+              </li>
+              <li class="active">Theory</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+               <!--<li class="treeview" id="program">
+                    <a href="result.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Result</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>-->
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                   Disc type flywheel <!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Introduction </h3>
+                    <p style="font-size:130%; margin-top:2%">
+					<div style="font-size:130%;">
+                    <!--Theory of experiment -->
+                    <h3 style="text-indent:50px">User Objectives and Goals:</h3>
+                    <ol>
+                    	<li>State the propose of flywheel and what is its basic applications</li>
+                    	<li>Describe the basic structure of Disc type flywheel and how to differentiate with other type of flywheel</li>
+                    	<li>Understand the condition of principle stress in the rotating disc</li>
+                    	<li>Predict the behaviour of disc type flywheel when its rotating</li>
+                    	<li>Combine and compare the time taken to touch the ground by metal bob for both rim type and disc type flywheel</li>
+                    </ol>
+					<br>
+                    <h3 style="text-indent:50px">Theory</h3>
+                    <p style="text-indent:50px" >A flywheel is a mechanical device which is designed to efficiently store rotational energy. It is an inertial energy-storage device. It absorbs mechanical energy and serves as a reservoir, storing energy during the period when the supply of energy is more than the requirement and releases it during the period when the requirement of energy is more than the supply.</p>
+                    <p style="text-indent:50px" >Flywheels have an inertia called the moment of inertia and thus resist changes in rotational speed. The amount of energy stored in a flywheel is proportional to the square of its rotational speed. A flywheel is a spinning wheel or disc with a fixed axle so that rotation is only about one axis. </p>
+					<p style="text-indent:50px" >The single cylinder engine is a prime candidate for the use of a flywheel. The intermittent nature of its power stroke makes one mandatory as it will store kinetic energy needed to carry the piston through the Otto cycle’s exhaust, intake, and compression stroke during which work must be done in the system.<a href="references.html">[1]</a></p>
+					<p style="text-indent:50px" >An imported application of a flywheel is in a mechanical press where for a fraction of time high energy is required for actual punching, shearing or forming. This energy is supplied by the flywheel. During the longer non active period, the speed of the flywheel is built up slowly by a low powered motor. Thus, the motor is not overloaded and also results in energy saving.<a href="references.html">[2]</a></p>
+					<p style="text-indent:50px" >In Rim type of flywheel, the mass of the flywheel is concentrated at the rim only i.e. not throughout the radius but only at the radius which is just opposite to disc type, thus imparting higher moment of inertia than disc type.</p>
+					<h3 style="text-indent:50px" > Equations/formulas:</h3>
+					<p style="text-indent:50px" >In this experiment, the potential energy of mass m is converted into its translation kinetic energy and rotational kinetic energy of flywheel and some of the energy is lost in overcoming frictional force. The conservation of energy equation at the instant when the mass touches the ground can be written as</p>
+					<p style="text-indent:150px" >\(mgH\) =\(1 \over 2\)\(mv^2\)+\(1 \over 2\)\(I\omega^2\)+\(n_1f\)----------(1)</p>				
+					<p style="text-indent:150px" >\(n_1f\) = \(T\theta\)----------(1.1)</p>	
+					<p style="text-indent:50px" >Here \(v\) is the velocity of mass and \(\omega\) is the angular velocity of flywheel at the instant when the mass touches the ground. Here \(f\) is the frictional energy lost per unit rotation of the flywheel and it is assumed to be steady. \(n_1\) is the number of rotations completed by the flywheel, when the mass attached string has left the axle.</p>	
+					<p style="text-indent:50px" >Even after the string has left the axle, the fly wheel continue to rotate and its angular velocity would decrease gradually and come to a rest when all is rotational kinetic energy has been used by the frictional energy. If \(n_2\) is the number of rotations made by the flywheel after the string has left the axle,</p>
+					<p style="text-indent:150px" >\(f\) =\(1 \over 2n_2\)\(I\omega^2\)----------(2)</p>				
+					<p style="text-indent:50px" >Substituting equation (2) in equation (1)</p>				
+					<p style="text-indent:150px" >\( I = \frac{2mgH - mv^2}{\omega^2(1+\frac{n_1}{n_2})} \)---------(3)</p>				
+					<p style="text-indent:50px" >The expression for the moment of inertia can be written as equation (4) by taking \(v\) = \(r\)\(\omega\)</p>				
+					<p style="text-indent:150px" >\( I = \frac{m (\frac{2gH}{\omega^2})-r^2}{1+\frac{n_1}{n_2}}\)---------(4)</p>				
+					<p style="text-indent:50px" >Where,</p>				
+					<p style="text-indent:50px" >\(I\) is the mass moment of Inertia of Disc= \(0.5*MR^2\)</p>				
+					<p style="text-indent:50px" >\(m\) is mass</p>				
+					<p style="text-indent:50px" >\(g\) is acceleration of gravity </p>				
+					<p style="text-indent:50px" >\(H\) is height </p>				
+					<p style="text-indent:50px" >\(v\) is the velocity of mass </p>				
+					<p style="text-indent:50px" >\(\omega\) is the angular velocity</p>				
+					<p style="text-indent:50px" >\(f\) is the frictional energy lost per unit rotation</p>				
+					<p style="text-indent:50px" >\(n_1\) is the number of rotations completed by the flywheel</p>				
+					<p style="text-indent:50px" >\(n_2\) the number of rotations made by the flywheel after the string has left the axle<a href="references.html">[3]</a></p>				
+					<center><img src="images/discImage.png"></center>			
+                    <center><p>Source: <a href="https://www.flyingspares.com/shop/rolls-royce-bentley-mkvi-r-type-dawn-wraith/gearbox-and-clutch/flywheel-manual/flexible-driving-disc-11-gb5292u.html">https://www.flyingspares.com/shop/rolls-royce-bentley-mkvi-r-type-dawn-wraith/gearbox-and-clutch/flywheel-manual/flexible-driving-disc-11-gb5292u.html</a></p></center>
+                    <br>
+					</div>
+                    </p>
+                    </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by NITK, Surathkal <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>

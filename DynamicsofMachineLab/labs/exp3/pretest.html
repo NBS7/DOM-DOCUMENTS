@@ -1,0 +1,356 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("pretest").className = "active treeview";
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:1em;"><b>Dynamics of Machine <!-- Write your lab name --> </b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Dynamics of Machine</a>
+              </li>
+              <li>
+                <a href="#">Hartnell Governor <!-- Write your experiment name --> </a>
+              </li>
+              <li class="active">Pre Test</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+              <!-- <li class="treeview" id="program">
+                    <a href="result.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Result</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>-->
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Hartnell Governor <!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Pre Test </h3>
+                    <p style="font-size:130%; margin-top:2%">
+
+                    <!--Pretest of experiment -->
+                     <form style="font-size:20px">
+				        Q1.	For a given fractional change of speed, if the displacement of the sleeve is high, then the governor is said to be
+				        <br>
+				        A &nbsp;<input type="radio" name="q1" value="watt" onclick="ans1();"> hunting<br>
+				        B &nbsp;<input type="radio" name="q1" value="watt" onclick="ans1();"> isochronous<br>
+				        C &nbsp;<input type="radio" name="q1" value="watt" onclick="ans1();"> sensitive<br>
+				        D &nbsp;<input type="radio" name="q1" value="watt" onclick="ans1();"> stable<br>
+				    </form>
+				    <div id="ans1" style="display:none;color:blue;font-size:20px">Ans is C</div>
+				    <br>
+				    <br>
+				    <form style="font-size:20px">
+				        Q2. Power of a governor is the
+				
+				        <br>
+				        A &nbsp;<input type="radio" name="q2" onclick="ans2();"> mean force exerted at the sleeve for a given percentage change of speed<br>
+				        B &nbsp;<input type="radio" name="q2" onclick="ans2();"> work done at the sleeve for maximum equilibrium speed<br>
+				        C &nbsp;<input type="radio" name="q2" onclick="ans2();"> means force exerted at the sleeve for maximum equilibrium speed<br>
+				        D &nbsp;<input type="radio" name="q2" onclick="ans2();"> none of the mentioned <br>
+				
+				    </form>
+				    <div id="ans2" style="display:none;color:blue;font-size:20px">Ans is D</div>
+				    <br>
+				    <br>
+					<form style="font-size:20px">
+				        Q3. The controlling force diagram for a spring-controlled governor is 
+				
+				        <br>
+				        A &nbsp;<input type="radio" name="q3" onclick="ans3();"> Not continuous<br>
+				        B &nbsp;<input type="radio" name="q3" onclick="ans3();"> Curve<br>
+				        C &nbsp;<input type="radio" name="q3" onclick="ans3();"> Straight line<br>
+				        D &nbsp;<input type="radio" name="q3" onclick="ans3();"> None of these <br>
+				
+				    </form>
+				    <div id="ans3" style="display:none;color:blue;font-size:20px">Ans is C</div>
+				    <br>
+				    <br>
+				    <form style="font-size:20px">
+				        Q4.	A spring controlled governor is said to be unstable when the controlling force
+						
+				        <br>
+				        A &nbsp;<input type="radio" name="q4" onclick="ans4();"> increases as the radius of rotation decreases<br>
+				        B &nbsp;<input type="radio" name="q4" onclick="ans4();"> decreases as the radius of rotation decreases <br>
+				        C &nbsp;<input type="radio" name="q4" onclick="ans4();"> increases as the radius of rotation increases<br>
+				        D &nbsp;<input type="radio" name="q4" onclick="ans4();"> remains constant for all radii of rotation<br>
+				
+				    </form>
+				    <div id="ans4" style="display:none;color:blue;font-size:20px">Ans is B</div>
+				    <br>
+				    <br>
+				    <form style="font-size:20px">
+				        Q5. In a spring-controlled governor, when the controlling force _____________ as the radius of rotation increases, it is said to be a stable governor.
+				        <br>
+				        A &nbsp;<input type="radio" name="q5" onclick="ans5();"> remains constant<br>
+				        B &nbsp;<input type="radio" name="q5" onclick="ans5();"> decreases<br>
+				        C &nbsp;<input type="radio" name="q5" onclick="ans5();"> increases<br>
+				        D &nbsp;<input type="radio" name="q5" onclick="ans5();"> none of the mentioned<br>
+				    </form>
+				    <div id="ans5" style="display:none;color:blue;font-size:20px">Ans is C</div>
+				    <br>
+					<br>
+				    <form style="font-size:20px">
+				        Q6. A spring controlled governor is said to be isochronous when the controlling force 
+				        <br>
+				        A &nbsp;<input type="radio" name="q6" onclick="ans6();"> increases as the radius of rotation decreases<br>
+				        B &nbsp;<input type="radio" name="q6" onclick="ans6();"> increases as the radius of rotation increases<br>
+				        C &nbsp;<input type="radio" name="q6" onclick="ans6();"> decreases as the radius of rotation decreases<br>
+				        D &nbsp;<input type="radio" name="q6" onclick="ans6();"> remains constant for all radii of rotation<br>
+				
+				    </form>
+				    <div id="ans6" style="display:none;color:blue;font-size:20px">Ans is D</div>
+				    <br>
+					<br>
+				    <form style="font-size:20px">
+				        Q7. A spring controlled governor is found unstable. It can be made stable by
+				        <br>
+				        A &nbsp;<input type="radio" name="q7" onclick="ans7();"> increasing the spring stiffness<br>
+				        B &nbsp;<input type="radio" name="q7" onclick="ans7();"> decreasing the spring stiffness<br>
+				        C &nbsp;<input type="radio" name="q7" onclick="ans7();"> increasing the ball mass<br>
+				        D &nbsp;<input type="radio" name="q7" onclick="ans7();"> decreasing the ball mass<br>
+				
+				    </form>
+				    <div id="ans7" style="display:none;color:blue;font-size:20px">Ans is B</div>
+				    <br>
+					<br>
+				    <form style="font-size:20px">
+				        Q8. A Hartnell governor is a governor of the
+				        <br>
+				        A &nbsp;<input type="radio" name="q8" onclick="ans8();"> inertia type <br>
+				        B &nbsp;<input type="radio" name="q8" onclick="ans8();"> pendulum type<br>
+				        C &nbsp;<input type="radio" name="q8" onclick="ans8();"> spring-controlled type<br>
+				        D &nbsp;<input type="radio" name="q8" onclick="ans8();"> dead weight type <br>
+				
+				    </form>
+				    <div id="ans8" style="display:none;color:blue;font-size:20px">Ans is C</div>
+				    <br>
+                    </p>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by NITK, Surathkal <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+   <!--pretest execution script -->
+   <script>
+   		function ans1()
+        {
+            var div1 = document.getElementById("ans1");
+            div1.style.display = "inline";
+        }
+        function ans2() {
+            var div1 = document.getElementById("ans2");
+            div1.style.display = "inline";
+        }
+        function ans3() {
+            var div1 = document.getElementById("ans3");
+            div1.style.display = "inline";
+        }
+        function ans4() {
+            var div1 = document.getElementById("ans4");
+            div1.style.display = "inline";
+        }
+        function ans5() {
+            var div1 = document.getElementById("ans5");
+            div1.style.display = "inline";
+        }
+        function ans6() {
+            var div1 = document.getElementById("ans6");
+            div1.style.display = "inline";
+        }
+		 function ans7() {
+            var div1 = document.getElementById("ans7");
+            div1.style.display = "inline";
+        }
+		 function ans8() {
+            var div1 = document.getElementById("ans8");
+            div1.style.display = "inline";
+        }
+		 function ans9() {
+            var div1 = document.getElementById("ans9");
+            div1.style.display = "inline";
+        }
+   </script>
+    
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
