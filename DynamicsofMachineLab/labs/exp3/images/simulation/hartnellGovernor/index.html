@@ -453,10 +453,18 @@ function draw()
 function selectPos(elem)
 {
 	var imgId = elem.id;
-	if(imgId == "cb1")
-	 document.getElementById("myImg").src = "images/MINPOS.PNG";
-	else if(imgId == "cb2")
-	 document.getElementById("myImg").src = "images/MAXPOS.PNG";
+	
+	if(imgId == "cb1") {
+		document.getElementById("myImg").src = "images/MINPOS.PNG";
+		document.getElementById("myImg").style.height= exptSelected == 0 ?"350px" : "255px";
+		document.getElementById("myImg").style.width= exptSelected == 0 ?"350px" : "455px";
+
+	} else if(imgId == "cb2") {
+		document.getElementById("myImg").src = "images/MAXPOS.PNG";
+		document.getElementById("myImg").style.height= exptSelected == 0 ?"350px" : "255px";
+		document.getElementById("myImg").style.width= exptSelected == 0 ?"350px" : "455px";
+
+	}
 	
 }
 //To set Experiments
@@ -500,8 +508,8 @@ function startExperiments() {
 			document.getElementById("fb").style.left= "200px";
 			document.getElementById("posControls").style.visibility = "visible";
 			document.getElementById("myImg").style.visibility = "visible";
-			document.getElementById("myImg").style.height= "240px";
-			document.getElementById("myImg").style.width= "320px";
+			document.getElementById("myImg").style.height= "255px";
+			document.getElementById("myImg").style.width= "450px";
 			document.getElementById("myImg").style.visibility = "visible";
 			document.getElementById("myImg").style.left= "100px";
 			document.getElementById("cb1").checked = true;
@@ -635,7 +643,8 @@ function startExperiments() {
 		document.getElementById("fb").style.left= "340px";
 		document.getElementById("posControls").style.visibility = "visible";
 		document.getElementById("myImg").style.visibility = "visible";
-		document.getElementById("myImg").style.height= "300px";
+		document.getElementById("myImg").style.height= "350px";
+		document.getElementById("myImg").style.width= "350px";
 		document.getElementById("myImg").style.left= "255px";
 		document.getElementById("partImage").style.visibility = "hidden";
 		document.getElementById("dropDownSet").style.display = "none";
